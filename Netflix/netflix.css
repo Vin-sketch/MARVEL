@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+body{
+  background-image: url("back.png");
+  background-size: cover;
+  background-attachment:fixed;
+  font: Trebuchet MS;
+}
+
+
+.navbar{
+  width: 100%;
+  height: 70px;
+  background-color: #b9090b;
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+
+}
+
+.navbar img
+{
+  width: auto;
+  height:100%;
+  margin:auto;
+  display:block;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+
+}
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    padding: 20px;
+}
+
+
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+}
+
+.row1 {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row1,
+.row1 > .column1 {
+    padding: 8px;
+}
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column1 {
+    float: left;
+    width: 100%;
+}
